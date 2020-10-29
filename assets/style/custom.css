@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box;
+  margin:0; padding: 0;
+  box-sizing: border-box; -moz-box-sizing: border-box;
+  outline: 0;
 }
 
 body {
@@ -7,6 +9,8 @@ body {
   margin: auto;
   padding: 0;
   background-image: url(../../assets/images/background1.jpg);
+  height: 100%;
+  min-height: 100%;
   min-width: 350px;
 }
 
@@ -49,4 +53,30 @@ marquee{
 {
   float: left;
   margin-left: 100px;
+}
+
+@media all and (max-width: 570px) {
+    
+  .display-4
+  {
+    font-size: xx-large;
+  }
+
+  h6{
+    font-size: small;
+  }
+
+  h3 i{
+    font-size: small
+  }
+  /*
+  .parentDiv{
+    flex-direction: column;
+  }
+
+  .parentDiv div{
+    align-items: center;
+    padding: 50px;
+  }
+  */
 }
